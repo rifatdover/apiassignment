@@ -1,0 +1,21 @@
+# ===================================================================
+# Spring Boot configuration for the "dev" profile.
+#
+# This configuration overrides the application.yml file.
+# ===================================================================
+logging:
+  level:
+    ROOT: INFO
+    com.zensar.api: DEBUG
+
+spring:
+  profiles:
+    active: dev
+  jackson:
+    serialization:
+      indent-output: true
+server:
+  port: 8080
+
+application:
+  app-backend: "https://jl-nonprod-syst.apigee.net"

@@ -1,0 +1,28 @@
+import org.gradle.internal.os.OperatingSystem
+
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-devtools"
+}
+
+def profiles = 'dev'
+
+bootRun {
+    args = []
+}
+
+processResources {
+    filesMatching('**/application.yml') {
+        filter {
+            it.replace('#project.version#', version)
+        }
+        filter {
+            print("Replacing active profile to dev")
+            it.replace('#spring.profiles.active#', profiles)
+        }
+    }
+}
+bootRun {
+    systemProperty "spring.profiles.active", profiles
+}

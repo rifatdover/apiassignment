@@ -1,0 +1,24 @@
+# ===================================================================
+# Spring Boot configuration.
+#
+# This configuration will be overridden by the Spring profile you use,
+# for example application-dev.yml if you use the "dev" profile.
+# ===================================================================
+spring:
+  application:
+    name: api
+  profiles:
+    active: #spring.profiles.active#
+  mvc:
+    favicon:
+      enabled: false
+  thymeleaf:
+    mode: HTML
+
+server:
+  servlet:
+    session:
+      cookie:
+        http-only: true
+application:
+  key: 2ALHCAAs6ikGRBoy6eTHA58RaG097Fma

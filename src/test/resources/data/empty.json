@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "productId": "",
+      "type": "",
+      "title": "",
+      "code": "",
+      "averageRating": 0,
+      "reviews": 0,
+      "price": {
+        "was": "0",
+        "then1": "0",
+        "then2": "0",
+        "now": "0",
+        "uom": "",
+        "currency": ""
+      },
+      "image": "",
+      "additionalServices": [],
+      "displaySpecialOffer": "",
+      "promoMessages": {
+        "priceMatched": "",
+        "offer": "",
+        "customPromotionalMessage": "",
+        "bundleHeadline": "",
+        "customSpecialOffer": {}
+      },
+      "nonPromoMessage": "",
+      "defaultSkuId": "",
+      "colorSwatches": [],
+      "colorSwatchSelected": 0,
+      "colorWheelMessage": "",
+      "outOfStock": false,
+      "emailMeWhenAvailable": false,
+      "availabilityMessage": "",
+      "compare": false,
+      "fabric": "",
+      "swatchAvailable": false,
+      "categoryQuickViewEnabled": true,
+      "swatchCategoryType": "",
+      "brand": "",
+      "ageRestriction": 0,
+      "isInStoreOnly": false,
+      "isMadeToMeasure": false,
+      "isBundle": false,
+      "isProductSet": false,
+      "promotionalFeatures": [],
+      "features": [],
+      "dynamicAttributes": {
+        "newinproducttype": "",
+        "washinginstructions": "",
+        "dressbyoccasion": "",
+        "dressshape": "",
+        "typeofpattern": ""
+      },
+      "directorate": "",
+      "releaseDateTimestamp": 0
+    }
+  ]
+}

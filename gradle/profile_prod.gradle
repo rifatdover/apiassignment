@@ -1,0 +1,18 @@
+apply plugin: 'org.springframework.boot'
+
+def profiles = 'prod'
+
+processResources {
+    filesMatching('**/application.yml') {
+        filter {
+            it.replace('#project.version#', version)
+        }
+        filter {
+            print("Replacing active profile to prod")
+            it.replace('#spring.profiles.active#', profiles)
+        }
+    }
+}
+bootRun {
+    systemProperty "spring.profiles.active", profiles
+}
