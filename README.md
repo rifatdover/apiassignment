@@ -17,6 +17,12 @@ For dev profile:
 
 ```./gradlew bootRun -Pdev```
 
+After you run:
+
+you can reach the products with:
+
+http://localhost:8080/products
+
 Was planning to do but had no time (will do if requested):
 
 - Jacoco reports
@@ -24,3 +30,6 @@ Was planning to do but had no time (will do if requested):
 - Jenkins pipelines build
 - Docker build
 - Cloud deploy 
+
+
+
