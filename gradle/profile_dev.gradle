@@ -18,7 +18,6 @@ processResources {
             it.replace('#project.version#', version)
         }
         filter {
-            print("Replacing active profile to dev")
             it.replace('#spring.profiles.active#', profiles)
         }
     }
