@@ -5,7 +5,8 @@ import kotlinx.coroutines.runBlocking
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*
 
-@RestController("/")
+@RestController
+@RequestMapping("/")
 class CategoriesResource {
 
     @Autowired
