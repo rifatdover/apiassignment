@@ -6,7 +6,6 @@ import org.springframework.context.annotation.Configuration
 /**
  * Properties specific to application.
  *
- *
  * Properties are configured in the application.yml file.
  *
  */

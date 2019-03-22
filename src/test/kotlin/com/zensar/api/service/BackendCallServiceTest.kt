@@ -44,7 +44,7 @@ internal class BackendCallServiceTest {
         runBlocking {
             val products = backendCallService.getProducts(labelType = "")
             assertNotNull(products)
-            assertEquals(products?.size, 50)
+            assertEquals(products?.size, 5)
         }
     }
 
@@ -53,7 +53,7 @@ internal class BackendCallServiceTest {
         runBlocking {
             val products = backendCallService.getProducts(labelType = "ShowWasNow")
             assertNotNull(products)
-            assertEquals(products?.size, 50)
+            assertEquals(products?.size, 5)
             assertEquals(products!![0].priceLabel, "Was £149, now £74")
         }
     }
@@ -63,7 +63,7 @@ internal class BackendCallServiceTest {
         runBlocking {
             val products = backendCallService.getProducts(labelType = "ShowWasThenNow")
             assertNotNull(products)
-            assertEquals(products?.size, 50)
+            assertEquals(products?.size, 5)
             assertEquals(products!![0].priceLabel, "Was £149, then £89, now £74")
         }
     }

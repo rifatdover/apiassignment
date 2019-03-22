@@ -6,6 +6,7 @@ import java.nio.file.Files
 
 /**
  * Utility Class for creating dummy response in case of error.
+ * @see [FailedDataFixerInterceptor]
  */
 class ClientUtil {
     companion object {

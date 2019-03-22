@@ -110,9 +110,12 @@ fun String?.displayPriceValue(): String {
 
 }
 
+/**
+ * Mapper method from [BackendColorSwatch] to [ColorSwatchDTO].
+ */
 fun BackendColorSwatch.toColorSwatchDTO(): ColorSwatchDTO = ColorSwatchDTO(color, colorMap[basicColor], skuId)
 
-val colorMap = hashMapOf(
+private val colorMap = hashMapOf(
         "Black" to "000000",
         "Blue" to "0000FF",
         "Green" to "00FF00",

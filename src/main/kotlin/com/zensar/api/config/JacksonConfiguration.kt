@@ -33,6 +33,7 @@ class JacksonConfiguration {
 
     /**
      * Error free deserialization module.
+     *
      * This helps if data has wrong fields like price.now as object
      * parses successfully
      *
@@ -47,7 +48,10 @@ class JacksonConfiguration {
         }
     }
 
-
+    /**
+     * Jackson Deserialization Problem Handler to handle unmet object problems.
+     * @see deserializerModule
+     */
     @Bean
     fun problemHandler(): DeserializationProblemHandler {
         return object : DeserializationProblemHandler() {

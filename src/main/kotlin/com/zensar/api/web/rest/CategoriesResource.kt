@@ -5,6 +5,10 @@ import kotlinx.coroutines.runBlocking
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*
 
+/**
+ * Categories Resource Controller to get products with discount
+ * @see BackendCallService
+ */
 @RestController
 @RequestMapping("/")
 class CategoriesResource {
